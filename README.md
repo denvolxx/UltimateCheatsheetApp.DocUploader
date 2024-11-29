@@ -16,6 +16,7 @@ Worker Microservice for [UltimateCheatsheetApp](https://github.com/denvolxx/Ulti
 - [MongoDB.Bson](https://www.nuget.org/packages/mongodb.bson)
 
 # Project description
-Worker project type, consumes Kafka messages from [UltimateCheatsheetApp](https://github.com/denvolxx/UltimateCheatsheetApp) (Web API project). Excel document itself is uploaded into Redis before Kafka message is produced and accessed after application consumed message.  Message contains identifier for the Excel document in Redis. Data is processed, and populated to the MongoDB.
+Worker project type, to add data from Excel file to the database. 
+Consumes Kafka messages from [UltimateCheatsheetApp](https://github.com/denvolxx/UltimateCheatsheetApp) (Web API project). Excel document itself is uploaded into Redis before Kafka message is produced and accessed after application consumed message.  Message contains identifier for the Excel document in Redis. Data is processed, and populated to the MongoDB.
 
 Basic formatting syntax for github readme here: https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
